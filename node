@@ -1,0 +1,41 @@
+10/30
+
+Node.js is a flexible JavaScript interpreter.
+
+Before we jump into JavaScript, we’re going to install Node. Doing this now will:
+1. You can enter a JavaScript console without needing to open a browser.
+2. You can run JavaScript files in your terminal. That means you don’t have to write JavaScript in HTML <script> tags, which makes the development experience a little cleaner
+
+
+Using your terminal, let check the version by typing:
+$ node -v
+
+This should print your current version, letting you know that node has installed correctly. It should also match the LTS version.
+
+Let’s actually enter our own JavaScript environment and declare variables from the comfort of our own terminal.
+$ node
+
+You should have noticed your command prompt may have changed from $ to >. That means whatever we write will be interpreted as JavaScript. (To exit this environment you can just type ctrl C twice or .exit once.)
+
+Let’s write some code:
+> console.log('hello');
+
+Did you see the following output?
+hello
+undefined
+
+One additional note before we move ahead. We just typed node to enter a JavaScript environment, but what if we wanted the node to run a file full of code that we wrote in our text editor (which is a bit more efficient than writing directly in the console)? Just append your file name to the node command, like so: node your_file_name.js.
+
+For macs: 
+If you try to run the node command and it fails check to make sure it is installed by typing which node in the terminal.  It should show something similar to this:
+
+[~]$which node
+/usr/local/bin/node
+
+If it states it cannot find node, it’s probably your Mac trying to protect you. Use the following command to give yourself the ability to write files into usr/local/:
+
+sudo chown -R $(whoami) /usr/local/
+
+This will prompt you for your password. After you succeed, try reinstalling node!
+
+To exit from node console, press Ctr+C or type .exit .
